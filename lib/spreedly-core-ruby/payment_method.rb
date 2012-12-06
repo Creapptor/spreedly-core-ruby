@@ -101,7 +101,7 @@ module SpreedlyCore
           @errors << "#{friendly_name.capitalize} can't be blank"
         end
       end
-      @errors = @errors.sort
+      @errors = @errors
     end
 
     def purchase_or_authorize(tran_type, amount, *args)
